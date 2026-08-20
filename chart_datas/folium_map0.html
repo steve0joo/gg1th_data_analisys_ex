@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_5395a83960407ae42fc6f8379ba8feef {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_5395a83960407ae42fc6f8379ba8feef" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_5395a83960407ae42fc6f8379ba8feef = L.map(
+                "map_5395a83960407ae42fc6f8379ba8feef",
+                {
+                    center: [37.5662952, 126.9779451],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 16,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_cb4db2e3055216078a500913263f9bf0 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 19,
+  "maxNativeZoom": 19,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_cb4db2e3055216078a500913263f9bf0.addTo(map_5395a83960407ae42fc6f8379ba8feef);
+        
+    
+            var marker_7384ea7611be5fa580685287eca1eca3 = L.marker(
+                [37.5662952, 126.9779451],
+                {
+}
+            ).addTo(map_5395a83960407ae42fc6f8379ba8feef);
+        
+    
+            var marker_f46b9bc0c6dd8db7a04527a554a3de82 = L.marker(
+                [37.5662952, 126.9779451],
+                {
+}
+            ).addTo(map_5395a83960407ae42fc6f8379ba8feef);
+        
+    
+        var popup_d27f3a474e6f9aa3e7e136bc8096cb16 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_51801f5d794a3fc26c94309dcfd08219 = $(`<div id="html_51801f5d794a3fc26c94309dcfd08219" style="width: 100.0%; height: 100.0%;">서울시청위치.</div>`)[0];
+                popup_d27f3a474e6f9aa3e7e136bc8096cb16.setContent(html_51801f5d794a3fc26c94309dcfd08219);
+            
+        
+
+        marker_f46b9bc0c6dd8db7a04527a554a3de82.bindPopup(popup_d27f3a474e6f9aa3e7e136bc8096cb16)
+        ;
+
+        
+    
+</script>
+</html>
